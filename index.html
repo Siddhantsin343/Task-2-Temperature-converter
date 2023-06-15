@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharat-Intern Task-2 Temperature Converter</title>
+
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <img  id="celsius" src="Celsius.png" alt="">
+        <img class="tempImg" id="C" src="C.png" alt="">
+        <img class="tempImg" id="F" src="F.png" alt="">
+  
+
+        <div id="container">
+
+            <h2 id="heading">Temperature Converter</h2>
+
+            <div id="main">
+                <div id="input">
+                    <label for="">Enter Value to Convert :</label>
+                    <input id="inputValue" type="text" placeholder="0" >
+                </div>
+
+                <div id="changeValue">
+                    <div class="changeFrom">
+                        <label for="">From :</label>
+                        <select name="input" id="changefrom">
+                            <option value="celsius">Celsius (&deg;C)</option>
+                            <option value="fahrenheit">Fahrenheit (&deg;F)</option>
+                         
+                        </select>
+                    </div>
+                    
+                    <div class="changeTo">
+                        <label for="">To :</label>
+                        <select name="input" id="changeto">
+                            <option value="celsius">Celsius (&deg;C)</option>
+                            <option value="fahrenheit">Fahrenheit (&deg;F)</option>
+                           
+                        </select>                        
+                    </div>
+                    
+                </div>
+
+                <button type="button" onclick="convertTemp()">Convert</button>
+
+                <div id="result">
+                    <label for="">Answer :</label>
+                    <input id="answer" type="text">
+                </div>
+
+                <script src="script.js"></script>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
